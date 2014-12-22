@@ -6,24 +6,15 @@ module.exports =
   staging:
     src: ['<%=STAGING_PATH%>']
 
-  build:
-    src: [
-      'dist/app/components'
-      'dist/app/config'
-      'dist/app/css'
-      'dist/app/modules'
-      'dist/app/index.html'
-    ]
-
   script:
     src: [
       '.tmp/coffee'
-      'dist/*.js'
-      'dist/*.js.map'
-      'dist/*.ts'
+      'lib/*.js'
+      'lib/*.js.map'
+      'lib/*.ts'
     ]
 
-  template:
+  publish:
     src: [
-      'dist/partial'
+      'lib/.baseDir.js'
     ]

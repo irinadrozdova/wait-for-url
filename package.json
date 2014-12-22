@@ -4,8 +4,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "",
-  "scripts": {
-  },
+  "scripts": {},
   "author": {
     "name": "Roberto Carlos Marte",
     "email": "app@carlosmarte.me",
@@ -13,6 +12,9 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "coffee-errors": "^0.8.6",
+    "coffee-script": "latest",
+    "coffeelint": "^1.6.0",
     "chai": "^1.9.1",
     "chai-as-promised": "^4.1.1",
     "grunt-autoload-config": "0.0.4",
@@ -34,5 +36,7 @@
     "should": "^4.0.4",
     "time-grunt": "latest"
   },
-  "dependencies": {}
+  "dependencies": {
+    "grunt-bump": "0.0.16"
+  }
 }

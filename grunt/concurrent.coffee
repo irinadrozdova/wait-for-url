@@ -1,6 +1,6 @@
 
 module.exports =
   watch:
-      tasks: ['connect:server', 'watch']
+      tasks: ['watch']
       options:
         logConcurrentOutput: true

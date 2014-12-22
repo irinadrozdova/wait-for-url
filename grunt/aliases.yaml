@@ -5,6 +5,7 @@ default:
 package:
   - 'clean:dist'
   - 'clean:staging'
+  - 'clean:publish'
   - 'script'
 
 script:

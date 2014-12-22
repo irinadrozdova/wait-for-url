@@ -7,9 +7,13 @@ options =
   declaration: false
   comments: true
   fast: 'never' # watch | always | never
-  sourceMap: true
+  sourceMap: false
   sourceRoot: '<%=STAGING_PATH%>/ts'
   mapRoot: '<%=STAGING_PATH%>/ts'
+
+unless options.sourceMap
+  options.sourceRoot = null
+  options.mapRoot = null
 
 source = [
   '<%=SOURCE_PATH%>/**/*.ts'
