@@ -9,12 +9,40 @@ wait-for-url
 
 ```js
 npm install wait-for-url --save-dev
-`
+```
 
 ## Usage
-```js
 
-`
+##### Wait For URL is particularly
+```js
+var waitForUrl = require('wait-for-url');
+
+waitForUrl('https://github.com/')
+  .done(function(responseStatus){
+    //do something
+  })
+  .catch(function(error){
+    //do something
+  })
+```
+##### Wait For URL is particularly change default options
+```js
+var waitForUrl = require('wait-for-url');
+
+waitForUrl('https://github.com/', {
+  attempts: 10, // attempts before failing
+  method: 'GET', // http request method (GET, POST, PUT...)
+  timeout: 60000, // threshold before request timeout
+  replayDelay: 250, // time before retrying
+})
+  .done(function(responseStatus){
+    //do something
+  })
+  .catch(function(error){
+    //do something
+  })
+```
+
 
 ### Authors
   - [Roberto Carlos Marte](http://carlosmarte.me/)

@@ -7,6 +7,7 @@ package:
   - 'clean:staging'
   - 'clean:publish'
   - 'script'
+  - 'release:patch'
 
 script:
   - 'tslint'
