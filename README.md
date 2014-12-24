@@ -13,7 +13,7 @@ npm install wait-for-url --save-dev
 
 ## Usage
 
-##### Wait For URL is particularly
+##### Wait For URL
 ```js
 var waitForUrl = require('wait-for-url');
 
@@ -25,7 +25,8 @@ waitForUrl('https://github.com/')
     //do something
   })
 ```
-##### Wait For URL is particularly change default options
+
+##### change default options
 ```js
 var waitForUrl = require('wait-for-url');
 
@@ -42,7 +43,6 @@ waitForUrl('https://github.com/', {
     //do something
   })
 ```
-
 
 ### Authors
   - [Roberto Carlos Marte](http://carlosmarte.me/)
