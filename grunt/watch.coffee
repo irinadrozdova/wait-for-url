@@ -7,11 +7,12 @@ module.exports =
   script:
     options: options
     files: [
-      './source/app/**/*.coffee'
-      './source/app/**/**/*.coffee'
-      './source/app/**/**/**/*.coffee'
-      './source/app/**/**/**/**/*.coffee'
-      './source/app/**/**/**/**/**/*.coffee'
-      './source/app/**/**/**/**/**/**/*.coffee'
+      './source/*.ts'
+      './source/**/*.ts'
+      './source/**/**/*.ts'
+      './source/**/**/**/*.ts'
+      './source/**/**/**/**/*.ts'
+      './source/**/**/**/**/**/*.ts'
+      './source/**/**/**/**/**/**/*.ts'
     ]
     tasks: ['script']

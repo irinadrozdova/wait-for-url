@@ -10,7 +10,10 @@ module.exports = (grunt) ->
     ext: '.coffee'
     initConfig:
       pkg: grunt.file.readJSON 'package.json'
+      SOURCE_MAPS: false
       MODULE_NAME: 'waitForUrl'
+      ES_TARGET: 'es5' # es5 | es3
+      MODULE_TYPE: 'amd' # commonjs | amd
       BASE_PATH: ''
       DEVELOPMENT_PATH: '.dev/'
       PRODUCTION_PATH: 'lib/'

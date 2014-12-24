@@ -1,17 +1,17 @@
 options =
   verbose: true
-  target: "es3" # es5 | es3
+  target: '<%=ES_TARGET%>' # es5 | es3
   noImplicitAny: true
-  module: "amd" # commonjs | amd
+  module: '<%=MODULE_TYPE%>' # commonjs | amd
   failOnTypeErrors: true
   declaration: false
   comments: true
   fast: 'never' # watch | always | never
-  sourceMap: false
+  sourceMap: '<%=SOURCE_MAPS%>'
   sourceRoot: '<%=STAGING_PATH%>/ts'
   mapRoot: '<%=STAGING_PATH%>/ts'
 
-unless options.sourceMap
+unless options.sourceMap is 'true'
   options.sourceRoot = null
   options.mapRoot = null
 

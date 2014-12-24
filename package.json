@@ -1,9 +1,8 @@
 {
-  "name": "durandaljs-scaffolding",
-  "private": true,
-  "version": "0.0.0",
-  "description": "",
-  "main": "",
+  "name": "wait-for-url",
+  "version": "0.0.1",
+  "description": "suspend the test until the specified URL is loaded",
+  "main": "lib/waitForUrl.js",
   "scripts": {},
   "author": {
     "name": "Roberto Carlos Marte",
@@ -12,11 +11,12 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "bluebird": "^2.4.2",
+    "chai": "^1.9.1",
+    "chai-as-promised": "^4.1.1",
     "coffee-errors": "^0.8.6",
     "coffee-script": "latest",
     "coffeelint": "^1.6.0",
-    "chai": "^1.9.1",
-    "chai-as-promised": "^4.1.1",
     "grunt-autoload-config": "0.0.4",
     "grunt-bower": "^0.15.0",
     "grunt-bump": "0.0.15",
@@ -34,9 +34,10 @@
     "load-grunt-tasks": "latest",
     "mocha": "latest",
     "should": "^4.0.4",
+    "grunt-bump": "0.0.16",
     "time-grunt": "latest"
   },
   "dependencies": {
-    "grunt-bump": "0.0.16"
+    "request": "^2.51.0"
   }
 }
