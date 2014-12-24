@@ -26,7 +26,7 @@ waitForUrl('https://github.com/')
   })
 ```
 
-##### change default options
+##### Change default options
 ```js
 var waitForUrl = require('wait-for-url');
 
