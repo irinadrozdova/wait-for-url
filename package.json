@@ -1,6 +1,6 @@
 {
   "name": "wait-for-url",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "suspend the test until the specified URL is loaded",
   "main": "lib/waitForUrl.js",
   "scripts": {},
