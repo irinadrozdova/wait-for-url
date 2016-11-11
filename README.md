@@ -34,7 +34,8 @@ waitForUrl('https://github.com/', {
   attempts: 10, // attempts before failing
   method: 'GET', // http request method (GET, POST, PUT...)
   timeout: 60000, // threshold before request timeout
-  replayDelay: 250, // time before retrying
+  replayDelay: 250, // time before retrying,
+  expectedStatusCode: 200
 })
   .done(function(responseStatus){
     //do something
